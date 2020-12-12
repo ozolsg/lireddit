@@ -2,9 +2,6 @@ import { Post } from "../entities/Post";
 import { MyContext } from "src/types";
 import { Resolver, Query, Ctx, Arg, Mutation } from "type-graphql";
 
-// sleep function
-const sleep = (ms: number) => new Promise((res) => setTimeout(res, ms));
-
 @Resolver()
 export class PostResolver {
   @Query(() => [Post])
