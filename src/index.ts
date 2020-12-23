@@ -29,6 +29,8 @@ const main = async () => {
   });
   await conn.runMigrations();
 
+  // await Post.delete({});
+
   // Create server
   const app = express();
 
